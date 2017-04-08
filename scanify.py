@@ -15,12 +15,12 @@ Options:
   -e --exposure adjust image exposreu
 """
 
-from scanify import core
+from core import *
 from docopt import docopt
 
 
 if __name__ == "__main__":
-    runnable = core.Scanifier()
+    runnable = Scanifier()
     options = docopt(__doc__, version='scanify 0.0.1')
     context_dict = {}
     in_path = options['<path>']

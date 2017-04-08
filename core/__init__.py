@@ -20,6 +20,7 @@ class Scanifier(object):
         if not imgout_path:
             imgout_path = self.__add_suffix(imgin_path)
         misc.imsave(imgout_path, img)
+        print("Saved to", imgout_path)
 
     def __expand_user(self, path):
         if path.startswith('~/'):
@@ -29,18 +30,20 @@ class Scanifier(object):
     def __add_suffix(self, path):
         name, ext = os.path.splitext(path)
         return "{name}_{suffix}{ext}".format(name=name, suffix="scanify",
-                                          ext=ext)
+                                             ext=ext)
 
     def __blur(self, img):
         """
         Gaussian blur
         """
+        print("Gaussian Filtering")
         return ndimage.gaussian_filter(img, sigma=100)
 
     def __divide(self, a, b):
         """
         divide blend
         """
+        print("Divide Blending")
         c = a / ((b.astype('float') + 1) / 256)
         d = c * (c < 255) + 255 * np.ones(np.shape(c)) * (c > 255)
         e = d.astype('uint8')
