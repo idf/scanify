@@ -9,7 +9,7 @@ Examples:
 
 Options:
   -o --out      output path of the image, default output to the same path with
-                sufixx
+                suffix
 """
 
 from core import *

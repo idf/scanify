@@ -1,6 +1,6 @@
 import os
-
 import numpy as np
+
 from scipy import misc, ndimage
 from skimage import exposure
 
@@ -48,6 +48,7 @@ class Scanifier(object):
         d = c * (c < 255) + 255 * np.ones(np.shape(c)) * (c > 255)
         e = d.astype('uint8')
         return e
+
 
 if __name__ == "__main__":
     scanifier = Scanifier()
