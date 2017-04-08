@@ -5,7 +5,7 @@ Usage:
   scanify <path>
   scanify <path> -o <outpath>
 Examples:
-  scanify '~/Desktop/p0.jpg'
+  scanify '/path/to/image.jpg'
 
 Options:
   -o --out      output path of the image, default output to the same path with

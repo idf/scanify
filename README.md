@@ -1,7 +1,7 @@
 # scanify
-A command line for applying image scanning effect 
+A command line for applying image scanning effect. 
 
-Make a document page taken with camera appear to be scanned.
+Make a document page taken with a phone camera appear to be scanned:
 ![demo](./demo/demo.jpg)  
 
 # Usage
