@@ -37,7 +37,7 @@ class Scanifier(object):
         Gaussian blur
         """
         print("Gaussian Filtering")
-        return ndimage.gaussian_filter(img, sigma=100)
+        return ndimage.gaussian_filter(img, sigma=50)
 
     def __divide(self, a, b):
         """
