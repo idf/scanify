@@ -19,7 +19,7 @@ setup(
         'docopt==0.6.2',
         'matplotlib==2.0.0',
         'networkx==1.11',
-        'numpy==1.12.1',
+        'numpy==1.22.0',
         'olefile==0.44',
         'Pillow==4.1.0',
         'pyparsing==2.2.0',
