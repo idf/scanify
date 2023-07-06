@@ -27,7 +27,7 @@ setup(
         'pytz==2017.2',
         'PyWavelets==0.5.2',
         'scikit-image==0.13.0',
-        'scipy==0.19.0',
+        'scipy==1.10.0',
         'six==1.10.0',
     ]
 )
