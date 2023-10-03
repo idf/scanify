@@ -21,7 +21,7 @@ setup(
         'networkx==1.11',
         'numpy==1.12.1',
         'olefile==0.44',
-        'Pillow==4.1.0',
+        'Pillow==10.0.1',
         'pyparsing==2.2.0',
         'python-dateutil==2.6.0',
         'pytz==2017.2',
